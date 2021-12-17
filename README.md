@@ -24,7 +24,7 @@ If using 0_0_log_class.py, you should put the .ulg file into ./logs/target:
 
 Once you have log_real.csv, it is advised to remove the first and last rows (preserve the header) to clip take off and landing phases.
 
-Then use 0_5_process_log_real to generate body vel / acc. This will generate log_real_processed.csv next to log_real.csv. This step is mandatory.
+Then use <b>0_5_process_log_real<\b> to generate body vel / acc. This will generate log_real_processed.csv next to log_real.csv. This step is mandatory.
 
 If interrested, use 1_0_compute_dataset_variance to estimate the variance of the acceleration from the dataset with a Kalman filter, but this is optionnal.
 
