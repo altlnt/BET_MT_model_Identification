@@ -38,9 +38,9 @@ If interrested, use 1_0_compute_dataset_variance to estimate the variance of the
 ## Identification
 Then:
 
-	-<b>2_id_BEM_preliminary</b> proceeds with model identification axis per axis 
-	-<b>3_id_BEM_acc_parallel</b> proceeds with model identification on all axes, using a various set of hypothesis. The results are stored in ./results/acc
-	-<b>4_id_BEM_speed_parallel</b> proceeds with model identification on all axes via speed prediction, using a various set of hypothesis. The results are stored in <b>./results/speed</b>. The speed prediction is performed on a subsample of the data, which may be tweaked with the "nsecs" parameter. nsecs='all' will use all the dataset for speed prediction, where as nsecs=1 will use one second long batches for speed prediction, which speeds up the optimisation but generates suboptimal coefficients. Identification with the speed if MUCH LONGER than with acceleration.
+	-2_id_BEM_preliminary proceeds with model identification axis per axis 
+	-3_id_BEM_acc_parallel proceeds with model identification on all axes, using a various set of hypothesis. The results are stored in ./results/acc
+	-4_id_BEM_speed_parallel proceeds with model identification on all axes via speed prediction, using a various set of hypothesis. The results are stored in ./results/speed. The speed prediction is performed on a subsample of the data, which may be tweaked with the "nsecs" parameter. nsecs='all' will use all the dataset for speed prediction, where as nsecs=1 will use one second long batches for speed prediction, which speeds up the optimisation but generates suboptimal coefficients. Identification with the speed if MUCH LONGER than with acceleration.
 
 For the two last scripts, parallelization is implemented to speed up calculations.
 
